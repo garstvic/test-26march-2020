@@ -1,3 +1,9 @@
 header { background: #e3e3e3; padding: 2em; text-align: center; }
 
 header nav li { display: inline; list-style-type: none; padding-right: 2rem; }
+
+table { font-family: arial, sans-serif; border-collapse: collapse; width: 100%; }
+
+td, th { border: 1px solid #dddddd; text-align: left; padding: 8px; }
+
+tr:nth-child(even) { background-color: #dddddd; }

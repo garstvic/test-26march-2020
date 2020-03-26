@@ -11,4 +11,9 @@ return [
         ],
         'DBMS'=>'mysql',
     ],
+    'api'=>[
+        'openweathermap'=>[
+            'api_key'=>'dd636b24b1abc4ac48c911078c384a50',
+        ],
+    ],
 ];

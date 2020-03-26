@@ -1,7 +1,23 @@
 {
     "autoload": {
-        "classmap": [
-            "./"
-        ]
+        "psr-4":{
+            "App\\Core\\": "core/",
+            "App\\Core\\Abstracts\\": "core/abstracts",
+            "App\\Core\\Components\\": "core/components",
+            "App\\Core\\Database\\": "core/database",
+            "App\\Core\\Interfaces\\": "core/interfaces",
+            "App\\Controllers\\": "app/controllers",
+            "App\\Models\\": "app/models",
+            "Console\\": "console",
+            "Console\\Commands\\": "console/src"
+        }        
+    },
+    "require": {
+        "cmfcmf/openweathermap-php-api": "^3.2",
+        "http-interop/http-factory-guzzle": "^1.0",
+        "php-http/guzzle6-adapter": "^2.0 || ^1.0",
+        "aura/sqlquery": "^2.7",
+        "symfony/console": "^5.0",
+        "guzzlehttp/guzzle": "^6.5"
     }
 }

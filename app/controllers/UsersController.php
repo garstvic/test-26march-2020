@@ -4,12 +4,13 @@ namespace App\Controllers;
 
 use App\Core\Controller;
 use App\Core\App;
+use App\Models\Users;
 
 class UsersController extends Controller
 {
     public function index()
     {
-        $users=App::get('db')->selectAll('users');
+        $users=Users::findAll();
 
         return $this->view('users',[
             'users'=>$users,
